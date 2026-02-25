@@ -1,0 +1,185 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+:root {
+  --selection-bg: #d6d6d6c9;
+  --selection-text: #252523;
+  --foreground: #10100f;
+  --background: #fffffff5;
+
+}
+
+.dark {
+  --selection-bg: #555;
+  --selection-text: #fffffff5;
+  --foreground: #fff;
+  --background: #10100f;
+
+}
+ 
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+}
+
+/* Selection Styles */
+::selection {
+  background: var(--selection-bg);
+  color: var(--selection-text);
+}
+
+/* For Mozilla Firefox */
+::-moz-selection {
+  background: var(--selection-bg);
+  color: var(--selection-text);
+}
+
+
+
+/* Utility classes */
+.h_m {
+  @apply font-manrope leading-[30px] font-bold text-[24px] tracking-[-0.03rem];
+}
+
+.h_p {
+  @apply font-sourceSarif text-blackish-400/90 md:text-blackish-400 dark:text-whiteish-500/90 leading-[28px] text-[18px] md:text-[20px] md:leading-[31px] tracking-[-0.003rem] md:tracking-normal;
+}
+
+.hf {
+  @apply text-[14px] md:text-[16px] tracking-[0.03rem] hover:underline underline-offset-2;
+}
+
+/* .h_f {
+  @apply ;
+} */
+
+
+
+
+#animate-shimmer {
+
+  @apply bg-blackish-100/70 dark:bg-blackish-400/80;
+
+
+}
+
+
+.gradient-text {
+  background: linear-gradient(90deg, #3cb4f0, #ef8624);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
+
+.scrollBar::-webkit-scrollbar {
+  width: 2px;
+}
+
+.scrollBar::-webkit-scrollbar-track {
+  background: #f0f0f000;
+  border-radius: 10px;
+}
+
+.scrollBar::-webkit-scrollbar-thumb {
+  background-color: #c4c4c4;
+  border-radius: 10px;
+
+}
+
+.scrollBar::-webkit-scrollbar-thumb:hover {
+  background-color: #555;
+}
+
+
+
+.scrollBarMain::-webkit-scrollbar {
+  width: 4px;
+}
+
+.scrollBarMain::-webkit-scrollbar-track {
+  background: #1f1f1d;
+  border-radius: 10px;
+}
+
+.scrollBarMain::-webkit-scrollbar-thumb {
+  background-color: #e4e4e48f;
+  border-radius: 10px;
+
+}
+
+.scrollBarMain::-webkit-scrollbar-thumb:hover {
+  background-color: #555;
+}
+
+
+
+/* LOADING LOADER CSS */
+.loader {
+  width: 60px;
+  height: 60px;
+  border-bottom-color: transparent;
+  border-radius: 50%;
+  display: inline-block;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+  }
+
+  @keyframes rotation {
+  0% {
+      transform: rotate(0deg);
+  }
+  100% {
+      transform: rotate(360deg);
+  }
+  } 
+
+
+
+  /* EDITOR CSS */
+  .ce-block__content h1 {
+    font-weight: bold;
+    font-size: 32px;
+}
+
+.ce-block__content h2 {
+    font-weight: bold;
+    font-size: 26px;
+}
+
+.ce-block__content h3 {
+    font-size: 21px;
+    font-weight: bold;
+}
+
+.ce-block__content p {
+    font-size: 10px;
+}
+
+.ce-paragraph {
+    font-size: 18px;
+}
+
+.cdx-list__item {
+    font-size: 18px;
+}
+@keyframes fade-slide-down {
+  from {
+    opacity: 0;
+    transform: translateY(-10%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-slide-down {
+  animation: fade-slide-down 0.3s ease-out forwards;
+}

@@ -1,0 +1,18 @@
+dashboard ---- 
+-- show my following
+-- bookmark and unbookmark system
+-- create and manage blogs page
+
+
+
+main site ----
+
+- likes, views impliment
+- 
+
+
+profile page ----
+
+- following and followers system
+-- redesign the profile page
+

@@ -1,0 +1,32 @@
+### 
+GET http://localhost:8000/v1/blog/getStaticParams
+Content-Type: application/json
+
+###
+PUT http://localhost:8000/v1/user/lib/684e6481889c3fe6f2d1b0b5/blog/683ee4d9b76b92e521fa13d7
+Content-Type: application/json
+
+
+### 
+GET http://localhost:8000/v1/user/lib/681605aee75d60a80d8a8ee1
+Content-Type: application/json
+
+
+
+### 
+POST  http://localhost:8000/v1/user/followUnfollow
+Content-Type: application/json
+
+{
+     "followerId": "681605aee75d60a80d8a8ee1",
+     "followingId": "67dc2e68e5d50d7e83a15553"
+}
+
+
+### 
+GET  http://localhost:8000/v1/user/followings/681605aee75d60a80d8a8ee1
+Content-Type: application/json
+ 
+
+
+ 

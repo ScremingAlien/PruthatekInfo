@@ -1,0 +1,23 @@
+###
+GET  http://localhost:8000/v1/blog/blogs/67d51fa18f36692eaa2a9c30
+
+
+
+### 
+PUT   http://localhost:8000/v1/blog/blogs/67d51fa18f36692eaa2a9c30
+Content-Type: application/json
+
+{
+     "title": "Title updated",
+  "thumbnail": "https://picsum.photos/seed/zV7Cu/1676/2702",
+  "subTitle": "Delinquo trepide certe theologus validus vobis virtus.",
+  "content": "Ambulo repudiandae deprimo. Somnus averto deputo atrox. Supra ustilo tabesco demoror statim.\nBenevolentia tamen ustilo. Textus voveo tripudio aufero. Vindico depraedor ad uterque accendo aut ultio voveo.\nCernuus cubicularis atrox uxor deporto. Utique taedium possimus. Surgo atrocitas vilitas paens careo audeo comes.\nUterque vobis atqui crudelis. Charisma acceptus aetas volubilis alveus brevis cogito celer temptatio. Animi depopulo civitas alii cedo.\nTemporibus culpa adeptio tabula patruus suadeo blandior tibi casus. Esse maiores decens tersus tabella pauper. Utilis in cibus decipio villa peior alter truculenter cupressus alioqui.",
+ 
+  "tags": [
+    "67d673118131773bb21cc808"
+  ],
+   
+  "timeRequired": 55
+      
+}
+
